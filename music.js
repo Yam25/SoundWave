@@ -19,7 +19,7 @@ let allMusic=[
     },
     {
         name:"Like That",
-        artist:"Future, Metro Bommin, Kendrick Lamar",
+        artist:"Future, Metro Bommin",
         img:"music-4",
         src:"music-4"
     },

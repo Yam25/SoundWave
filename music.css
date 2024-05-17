@@ -1,3 +1,4 @@
+html, body {width: auto!important; overflow-x: hidden!important} 
 body{
     display:flex;
     align-items: center;

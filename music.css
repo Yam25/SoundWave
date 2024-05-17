@@ -1,0 +1,221 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family:sans-serif ;
+    overflow:hidden ;
+    background:linear-gradient(90deg,#8532a1cc,#392a4e);
+    white-space: nowrap;
+}
+.wrapper{
+    width:350px;
+    height:600px;
+    position:relative;
+    padding:25px 30px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0px 6px 15px 0px rgba(218, 213, 220, 0.518);
+    overflow: hidden;
+}
+.wrapper i{
+    cursor: pointer;
+}
+.top,.timer,.controls,.music-list .header, .music-list li{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.top i{
+    font-size: 30px;
+    color:rgb(59, 59, 59);
+}
+.top span{
+    font-size: 18px;
+    color:rgb(59, 59, 59);
+}
+.image-ar{
+    height:300px;
+    width:100%;
+    border-radius: 15px;
+    overflow:hidden;
+    margin-top:15px;
+    box-shadow: 0px 6px 15px 0px rgba(218, 213, 220, 0.518);
+}
+.image-ar img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+.songdetails{
+    text-align: center;
+    margin:30px 0px;
+    color:rgb(59, 59, 59);
+}
+.songdetails .name{
+    font-size: 21px;
+}
+.songdetails .artist{
+    opacity: 0.9;
+    font-size: 17px;
+}
+.prograss{
+    height:6px;
+    width:100%;
+    background: #f0f0f0;
+    border-radius:50px ;
+    cursor: pointer;
+}
+.prograss .bar{
+    position: relative;
+    height:inherit;
+    width:0%;
+    border-radius: inherit;
+    background:linear-gradient(90deg,#8532a1cc,#392a4e);
+}
+.bar::before{
+    content:"";
+    position: absolute;
+    height:12px;
+    width:12px;
+    background:black;
+    border-radius: inherit;
+    top:50%;
+    right:-5px;
+    transform: translateY(-50%);
+    background:inherit;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.prograss:hover .bar::before{
+    opacity: 1;
+}
+.timer{
+    margin-top:2px;
+}
+.timer span{
+    font-size: 13px;
+    color:rgb(59, 59, 59);
+}
+.controls{
+    margin:40px 0 50px 0;
+
+}
+#rept{
+    font-size: 40px;
+}
+.controls i{
+    font-size: 28px;
+    user-select:none;
+    background:linear-gradient(#8532a1cc,#392a4e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent ;
+}
+.controls i:nth-child(2),
+.controls i:nth-child(4){
+    font-size:43px;
+}
+.controls #back{
+    margin-right: -13px;
+}
+.controls #for{
+    margin-left: -13px;
+}
+.controls .play-p{
+    height: 54px;
+    width: 54px;
+    background:linear-gradient(#ffffff,#cecaca);
+    box-shadow:0px 0px 5px #8532a1cc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.play-p::before{
+    content:"";
+    position: absolute;
+    border-radius: inherit;
+    height: 43px;
+    width: 43px;
+    background: linear-gradient(#8532a1cc,#392a4e);
+}
+.play-p i{
+font-size: 20px;
+height:43px;
+width: 43px;
+line-height: 43px;
+text-align: center;
+border-radius: inherit;
+background: inherit;
+position: relative;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color:transparent ;
+}
+.music-list{
+    position: absolute;
+    left:0;
+    bottom:-55%;
+    opacity: 0;
+    pointer-events: none;
+    width: inherit;
+    padding:15px 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px -5px 10px rgba(0, 0,0, 0.1) ;
+    transition: all 0.14s ease-out;
+}
+.music-list.show{
+    bottom:0;
+    opacity: 1;
+    pointer-events: auto;
+}
+.music-list .header .row{
+    display:flex;
+    align-items: center;
+    font-size: 19px ;
+    color: rgb(59, 59, 59);
+}
+.header .row i{
+   cursor: default; 
+}
+.header #close{
+    font-size: 22px;
+    color: rgb(59, 59, 59);
+}
+.header .row span{
+    margin-left: 5px;
+}
+ .music-list ul{
+    max-height: 260px;
+    overflow-y: auto;
+    margin-left:-38px;
+}
+.music-list ul::-webkit-scrollbar{
+    width:0px;
+}
+.music-list ul li{
+    cursor: pointer;
+    list-style: none;
+    padding-bottom:10px;
+    margin-bottom:5px;
+    border-bottom: 1px solid #e5e5e5;
+    color:rgb(59, 59, 59);
+}
+.music-list ul li:last-child{
+    border-bottom: 0px;
+}
+.music-list ul li .row span{
+    font-size: 17px;
+}
+ul li .row p{
+    opacity: 0.9;
+}
+ul li .audio-dur{
+    font-size: 16px;
+}
+ul li.playing{
+    color: #8532a1cc;
+    pointer-events: none;
+}

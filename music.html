@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWave</title>
+    <link href="music.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/333889fa25.js" crossorigin="anonymous"></script>
+<body>
+    <div class="wrapper">
+        <div class="top">
+          <i class="fa-solid fa-chevron-down"></i> 
+          <span>Now Playing</span>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div class="image-ar">
+         <img src="" alt="">
+        </div>
+        <div class="songdetails">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+        <div class="prograss">
+            <div class="bar"></div>
+            <div class="timer">
+                <span class="current"></span>
+                <span class="duration"></span>
+            </div>
+            <audio id="audio" src=""></audio>
+        </div>
+        <div class="controls">
+            <i id="rept" class="material-icons" title="Playlist looped">repeat</i>
+            <i id="back" class="fa-solid fa-backward-step"></i>
+            <div class="play-p">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <i id="for"class="fa-solid fa-forward-step"></i>
+            <i id="more" class="fa-solid fa-list"></i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Music list</span>
+                </div>
+                <i id="close" class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+               <!--here li is coming from js--> 
+            </ul>
+        </div>
+    </div>
+    <script src="music.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

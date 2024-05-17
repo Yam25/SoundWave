@@ -1,4 +1,5 @@
-html, body {width: auto!important; overflow-x: hidden!important} 
+html, body {width: auto!important; overflow-x: hidden!important;
+            overflow-y: hidden;} 
 body{
     display:flex;
     align-items: center;

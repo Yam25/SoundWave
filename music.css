@@ -221,3 +221,80 @@ ul li.playing{
     color: #8532a1cc;
     pointer-events: none;
 }
+/* making it responsive */
+@media screen and (max-width:640px){
+    .wrapper{
+    width:300px;
+    height:550px;
+    }
+    .top span, .top i{   /* rgb(59, 59, 59)*/
+        font-size: 20px;
+    color:rgb(59, 59, 59);
+    }
+    .image-ar{
+        height : 250px;
+    }
+    .controls i{
+        font-size: 25px;
+    }
+    .controls i:nth-child(2),
+    .controls i:nth-child(4){
+        font-size: 30px;
+    }
+    #rept{
+        font-size: 30px;
+    }
+    .controls .play-p{
+        height: 40px;
+        width: 40px;
+    }
+    .play-p::before{
+        height: 35px;
+        width: 35px;
+    }
+    .controls{
+        margin:45px 0 30px 0;
+    }
+    i.fa-solid.fa-play{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:425px)
+{
+    .wrapper{
+        width: 200px;
+        height:400px;
+        }
+        .top span, .top i{
+        font-size: 15px;
+        color:rgb(59, 59, 59);
+        }
+        .image-ar{
+            height : 180px;
+        }
+        .controls i{
+            font-size: 15px;
+        }
+        .controls i:nth-child(2),
+        .controls i:nth-child(4){
+            font-size:20px;
+        }
+        #rept{
+            font-size: 20px;
+        }
+        .controls .play-p{
+            height: 35px;
+            width: 35px;
+        }
+        .play-p::before{
+            height: 30px;
+            width: 30px;
+        }
+        .controls{
+            margin:25px 0 30px 0;
+        }
+        i.fa-solid.fa-play{
+            font-size: 15px;
+        }
+}

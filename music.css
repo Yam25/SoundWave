@@ -258,30 +258,37 @@ ul li.playing{
     i.fa-solid.fa-play{
         font-size: 20px;
     }
+    .songdetails .name{
+        font-size: 20px;
+    }
+    .songdetails .artist{
+        opacity: 0.9;
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width:425px)
 {
     .wrapper{
-        width: 200px;
-        height:400px;
+        width: 250px;
+        height:450px;
         }
         .top span, .top i{
         font-size: 15px;
         color:rgb(59, 59, 59);
         }
         .image-ar{
-            height : 180px;
+            height : 200px;
         }
         .controls i{
-            font-size: 15px;
+            font-size: 18px;
         }
         .controls i:nth-child(2),
         .controls i:nth-child(4){
-            font-size:20px;
+            font-size:23px;
         }
         #rept{
-            font-size: 20px;
+            font-size: 22px;
         }
         .controls .play-p{
             height: 35px;
@@ -292,9 +299,16 @@ ul li.playing{
             width: 30px;
         }
         .controls{
-            margin:25px 0 30px 0;
+            margin:30px 0 30px 0;
         }
         i.fa-solid.fa-play{
             font-size: 15px;
+        }
+        .songdetails .name{
+            font-size: 18px;
+        }
+        .songdetails .artist{
+            opacity: 0.9;
+            font-size: 16px;
         }
 }

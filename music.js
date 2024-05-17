@@ -13,7 +13,7 @@ let allMusic=[
     },
     {
         name:"CARNIVAL",
-        artist:"Kayne West, Playboi Carti, Ty Dolla $ign, Rich The Kid",
+        artist:"Kayne West, Playboi Carti",
         img:"music-3",
         src:"music-3"
     },
